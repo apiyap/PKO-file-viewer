@@ -28,138 +28,138 @@ namespace Mindpower
     public class CChaRecord : CRawDataInfo
     {
         public int lID;
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 32)]
-        public char[] szName;
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 17)]
-        public char[] szIconName;
-        public char chModalType;
-        public char chCtrlType;
-        public short sModel;
-        public short sSuitID;
-        public short sSuitNum;
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 40)]
+        public char[] szName;   // 
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 40)]
+        public char[] szIconName;       // 
+        public char chModalType;        // 
+        public char chCtrlType;         // 
+        public short sModel;            // 
+        public short sSuitID;           // 
+        public short sSuitNum;          // 
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 8)]
-        public short[] sSkinInfo;
+        public short[] sSkinInfo;       // 
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 4)]
-        public short[] sFeffID;
-        public short sEeffID;
+        public short[] sFeffID;         // FeffID
+        public short sEeffID;           // EeffID
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 3)]
-        public short[] sEffectActionID;
-        public short sShadow;
-        public short sActionID;
-        public char chDiaphaneity;
-        public short sFootfall;
-        public short sWhoop;
-        public short sDirge;
-        public char chControlAble;
-        public char chTerritory;
-        public short sSeaHeight;
+        public short[] sEffectActionID; // 
+        public short sShadow;           // 
+        public short sActionID;         // 
+        public char chDiaphaneity;      // 
+        public short sFootfall;         // 
+        public short sWhoop;            // 
+        public short sDirge;            // 
+        public char chControlAble;      // 
+        public char chTerritory;        // 
+        public short sSeaHeight;        // 
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 20)]
-        public short[] sItemType;
-        public float fLengh;
-        public float fWidth;
-        public float fHeight;
-        public short sRadii;
+        public short[] sItemType;       // 
+        public float fLengh;            // 
+        public float fWidth;            // 
+        public float fHeight;           //
+        public short sRadii;            // 
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 3)]
-        public char[] nBirthBehave;
+        public char[] nBirthBehave;     //
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 3)]
-        public char[] nDiedBehave;
-        public short sBornEff;
-        public short sDieEff;
-        public short sDormancy;
-        public char chDieAction;
+        public char[] nDiedBehave;      //
+        public short sBornEff;          // 
+        public short sDieEff;           // 
+        public short sDormancy;         //
+        public char chDieAction;        // 
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 3)]
-        public int[] _nHPEffect;
-        public bool _IsFace;
-        public bool _IsCyclone;
-        public int lScript;
-        public int lWeapon;
+        public int[] _nHPEffect;        // 
+        public bool _IsFace;            // 
+        public bool _IsCyclone;         // 
+        public int lScript;             // 
+        public int lWeapon;             // 
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 22)]
-        public int[] lSkill;
+        public int[] lSkill;            // 
         //int lSkill[11][2];
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 20)]
-        public int[] lItem;
+        public int[] lItem;             // 
         //int lItem[10][2];
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 20)]
-        public int[] lTaskItem;
+        public int[] lTaskItem;         // 
         //int lTaskItem[10][2];
-        public int lMaxShowItem;
-        public float fAllShow;
-        public int lPrefix;
-        public int lAiNo;
-        public char chCanTurn;
-        public int lVision;
-        public int lNoise;
-        public int lGetEXP;
-        public bool bLight;
-        public int lMobexp;
-        public int lLv;
-        public int lMxHp;
-        public int lHp;
-        public int lMxSp;
-        public int lSp;
-        public int lMnAtk;
-        public int lMxAtk;
-        public int lPDef;
-        public int lDef;
-        public int lHit;
-        public int lFlee;
-        public int lCrt;
-        public int lMf;
-        public int lHRec;
-        public int lSRec;
-        public int lASpd;
-        public int lADis;
-        public int lCDis;
-        public int lMSpd;
-        public int lCol;
-        public int lStr;
-        public int lAgi;
-        public int lDex;
-        public int lCon;
-        public int lSta;
-        public int lLuk;
-        public int lLHandVal;
+        public int lMaxShowItem;        // 
+        public float fAllShow;          //
+        public int lPrefix;             // 
+        public int lAiNo;               //
+        public char chCanTurn;          // 
+        public int lVision;             // 
+        public int lNoise;              //
+        public int lGetEXP;             // 
+        public bool bLight;             // 
+        public int lMobexp;             // 
+        public int lLv;                 // 
+        public int lMxHp;               // 
+        public int lHp;                 // 
+        public int lMxSp;               // 
+        public int lSp;                 // 
+        public int lMnAtk;              // 
+        public int lMxAtk;              // 
+        public int lPDef;               // 
+        public int lDef;                //
+        public int lHit;                // 
+        public int lFlee;               // 
+        public int lCrt;                // 
+        public int lMf;                 //
+        public int lHRec;               //
+        public int lSRec;               // 
+        public int lASpd;               // 
+        public int lADis;               // 
+        public int lCDis;               // 
+        public int lMSpd;               // 
+        public int lCol;                // 
+        public int lStr;                // 
+        public int lAgi;                // 
+        public int lDex;                // 
+        public int lCon;                // 
+        public int lSta;                // 
+        public int lLuk;                // 
+        public int lLHandVal;           //
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 33)]
-        public char[] szGuild;
+        public char[] szGuild;          // 
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 33)]
-        public char[] szTitle;
+        public char[] szTitle;          // 
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 17)]
-        public char[] szJob;
-        public int lCExp;
-        public int lNExp;
-        public int lFame;
-        public int lAp;
-        public int lTp;
-        public int lGd;
-        public int lSpri;
-        public int lStor;
-        public int lMxSail;
-        public int lSail;
-        public int lStasa;
-        public int lScsm;
-        public int lTStr;
-        public int lTAgi;
-        public int lTDex;
-        public int lTCon;
-        public int lTSta;
-        public int lTLuk;
-        public int lTMxHp;
-        public int lTMxSp;
-        public int lTAtk;
-        public int lTDef;
-        public int lTHit;
-        public int lTFlee;
-        public int lTMf;
-        public int lTCrt;
-        public int lTHRec;
-        public int lTSRec;
-        public int lTASpd;
-        public int lTADis;
-        public int lTSpd;
-        public int lTSpri;
-        public int lTScsm;
+        public char[] szJob;             //
+        public Int64 lCExp;              // 
+        public Int64 lNExp;              // 
+        public int lFame;               // 
+        public int lAp;                 // 
+        public int lTp;                 // 
+        public int lGd;                 // 
+        public int lSpri;               // 
+        public int lStor;               // 
+        public int lMxSail;             // 
+        public int lSail;               // 
+        public int lStasa;              // 
+        public int lScsm;               // 
+        public int lTStr;               // 
+        public int lTAgi;               // 
+        public int lTDex;               // 
+        public int lTCon;               // 
+        public int lTSta;               //
+        public int lTLuk;               // 
+        public int lTMxHp;              // 
+        public int lTMxSp;              // 
+        public int lTAtk;               // 
+        public int lTDef;               // 
+        public int lTHit;               // 
+        public int lTFlee;              // 
+        public int lTMf;                //
+        public int lTCrt;               //
+        public int lTHRec;              // 
+        public int lTSRec;              // 
+        public int lTASpd;              // 
+        public int lTADis;              // 
+        public int lTSpd;               // 
+        public int lTSpri;              // 
+        public int lTScsm;              // 
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 3)]
-        public float[] scaling;
+        public float[] scaling;         // 
 
         //private bool _HaveEffectFog;
     }
